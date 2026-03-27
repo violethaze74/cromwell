@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
 RUN mkdir /home/notroot && groupadd -r notroot -g 433 && \
 useradd -u 431 -r -g notroot -d /home/notroot -s /sbin/nologin -c "Docker image user" notroot && \
